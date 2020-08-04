@@ -4,7 +4,7 @@ import './Input.css';
 class Input extends React.Component {
     render() {
         return (
-            <input type="text" id="movie1" />
+            <input className="item-input" type="text" />
         )
     }
 }
