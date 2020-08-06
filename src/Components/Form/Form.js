@@ -22,7 +22,7 @@ class Form extends React.Component {
                         )
                     })
                 }
-                <button onClick={this.handleAddInput} >Add input</button>
+                <a href="#" onClick={this.handleAddInput} >Add input</a>
             </form>
         )
     }
