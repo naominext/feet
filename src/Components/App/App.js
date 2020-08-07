@@ -70,7 +70,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>FEET Heading will go here</h1>
+        <h1>This will be a heading</h1>
         < Form inputs={this.state.inputs} onInputChange={this.updateInput} onAddInput={this.addInput} onRemoveInput={this.removeInput} onSubmit={this.submitForm} />
       </div>
     )
