@@ -1,8 +1,32 @@
 .item-input {
-    padding: 10px;
-    border: 1px solid #202020;
+    padding: 16px;
+    border: 0px;
     display: block;
     margin: 10px;
     width: 100%;
     max-width: 500px;
+    height: 24px;
+    border-radius: 4px;
+    position: relative;
+    background-color: rgba(255,255,255,0.3);
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
 }
+    
+input:focus, textarea:focus, select:focus {
+    border: 2px solid rgba(255,255,255,0.6) !important;
+    box-shadow: 0 0 3px rgba(255,255,255,0.6) !important;
+    -moz-box-shadow: 0 0 3px rgba(255,255,255,0.6) !important;
+    -webkit-box-shadow: 0 0 3px rgba(255,255,255,0.6) !important;
+    outline-offset: 0px !important;
+    outline: none !important;
+    }
+
+input::selection {
+    background: #c71585;}
+
+input::-moz-selection {
+    background: #c71585;}
