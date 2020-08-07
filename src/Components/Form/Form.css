@@ -4,6 +4,32 @@ form {
     align-items: center;
 }
 
-.add-remove a {
+form a {
     margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.add-remove {
+    margin: 20px 0;
+}
+
+.add-remove a {
+    color: black;
+}
+
+.add-remove a:hover {
+    background-color: #f1f1f1;
+}
+
+#submit {
+    background-color: black;
+    color: white;
+}
+
+#submit:hover {
+    background-color: #404040;
 }

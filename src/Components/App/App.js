@@ -17,6 +17,7 @@ class App extends React.Component {
           value: '',
         }
       ],
+      winner: {},
     };
 
     this.submitForm = this.submitForm.bind(this);
@@ -57,14 +58,20 @@ class App extends React.Component {
   }
 
   submitForm() {
-
+    let inputs = this.state.inputs;
+    let winner = Math.floor(Math.random() * inputs.length);
+    console.log(winner);
+    this.setState({
+      formSubmitted: true,
+      winner: inputs[winner],
+    })
   }
 
   render() {
     return (
       <div className="App">
         <h1>FEET Heading will go here</h1>
-        < Form inputs={this.state.inputs} onInputChange={this.updateInput} onAddInput={this.addInput} onRemoveInput={this.removeInput} />
+        < Form inputs={this.state.inputs} onInputChange={this.updateInput} onAddInput={this.addInput} onRemoveInput={this.removeInput} onSubmit={this.submitForm} />
       </div>
     )
   }
