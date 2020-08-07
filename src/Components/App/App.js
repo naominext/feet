@@ -22,9 +22,10 @@ class App extends React.Component {
     this.submitForm = this.submitForm.bind(this);
     this.updateInput = this.updateInput.bind(this);
     this.addInput = this.addInput.bind(this);
+    this.removeInput = this.removeInput.bind(this);
   }
 
-  addInput () {
+  addInput() {
     let inputs = this.state.inputs;
     let nextId = inputs.length + 1;
     inputs.push({
@@ -36,7 +37,17 @@ class App extends React.Component {
     })
   }
 
-  updateInput (id, newValue) {
+  removeInput() {
+    let inputs = this.state.inputs;
+    if (inputs.length > 2) {
+      inputs.pop();
+      this.setState({
+      inputs: inputs,
+    })
+    }
+  }
+
+  updateInput(id, newValue) {
     let inputs = this.state.inputs;
     let index = id - 1;
     inputs[index].value = newValue;
@@ -53,7 +64,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>FEET Heading will go here</h1>
-        < Form inputs={this.state.inputs} onInputChange={this.updateInput} onAddInput={this.addInput} />
+        < Form inputs={this.state.inputs} onInputChange={this.updateInput} onAddInput={this.addInput} onRemoveInput={this.removeInput} />
       </div>
     )
   }
