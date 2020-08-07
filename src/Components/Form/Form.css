@@ -19,10 +19,11 @@ form a {
 
 .add-remove a {
     color: black;
+    background-color: white;
 }
 
 .add-remove a:hover {
-    background-color: #f1f1f1;
+    background-color: #f0f0f0;
 }
 
 #submit {
