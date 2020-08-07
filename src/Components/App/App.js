@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Form from '../Form/Form';
+import Logo from '../../logo.svg';
+import LogoContainer from '../Logo/Logo.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -70,6 +72,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <div className="LogoContainer"><img src={Logo} alt="Logo" width="140px"/></div>
         <h1>The one to watch?</h1>
         < Form inputs={this.state.inputs} onInputChange={this.updateInput} onAddInput={this.addInput} onRemoveInput={this.removeInput} onSubmit={this.submitForm} />
       </div>
