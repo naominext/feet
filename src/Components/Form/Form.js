@@ -33,8 +33,8 @@ class Form extends React.Component {
                     })
                 }
                 <div className="add-remove">
-                    <a href="#" onClick={this.handleAddInput} >Add item</a>
-                    <a style={{ display: this.props.inputs.length > 2 ? 'inline' : 'none' }} href="#" onClick={this.handleRemoveInput} >Remove item</a>
+                    <a href="#" onClick={this.handleAddInput} >&#43;</a>
+                    <a style={{ display: this.props.inputs.length > 2 ? 'inline-block' : 'none' }} href="#" onClick={this.handleRemoveInput} >&#45;</a>
                 </div>
                 <a id="submit" href="#" onClick={this.handleSubmit}>Decide for me</a>
             </form>
