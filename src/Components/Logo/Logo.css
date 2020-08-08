@@ -14,7 +14,11 @@
 
 .reel{
 animation: spin 12s infinite linear;
-transform-origin: 39px 29px;
+transform-origin: 98% 88%;
 fill:#f2f4f5;
 
+}
+
+.reelpos{
+transform: translate(-20px,-15px);
 }
