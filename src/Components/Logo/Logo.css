@@ -2,3 +2,19 @@
     max-height: 70px;
     overflow: hidden;
 }
+
+.cls-1{
+    fill:#f2f4f5;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.reel{
+animation: spin 12s infinite linear;
+transform-origin: 39px 29px;
+fill:#f2f4f5;
+
+}
