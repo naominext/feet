@@ -18,13 +18,14 @@ class Form extends React.Component {
         this.props.onRemoveInput();
     }
 
-    handleSubmit() {
+    handleSubmit(e) {
+        e.preventDefault();
         this.props.onSubmit();
     }
 
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 {
                     this.props.inputs.map(input => {
                         return (
@@ -36,7 +37,7 @@ class Form extends React.Component {
                     <a style={{ display: this.props.inputs.length > 2 ? 'inline-block' : 'none' }} href="#" onClick={this.handleRemoveInput} >&#45;</a>
                     <a href="#" onClick={this.handleAddInput} >&#43;</a>
                 </div>
-                <a id="submit" href="#" onClick={this.handleSubmit}>Make my pick</a>
+                <input type="submit" id="submit" value="Make my pick" />
             </form>
         )
     }

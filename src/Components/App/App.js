@@ -61,7 +61,6 @@ class App extends React.Component {
   submitForm() {
     let inputs = this.state.inputs;
     let winner = Math.floor(Math.random() * inputs.length);
-    console.log(winner);
     this.setState({
       formSubmitted: true,
       winner: inputs[winner],

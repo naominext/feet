@@ -16,7 +16,7 @@
     font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
 }
     
-input:focus, textarea:focus, select:focus {
+.item-input:focus, textarea:focus, select:focus {
     border: 2px solid rgba(255,255,255,0.6) !important;
     box-shadow: 0 0 3px rgba(255,255,255,0.6) !important;
     -moz-box-shadow: 0 0 3px rgba(255,255,255,0.6) !important;
@@ -25,8 +25,8 @@ input:focus, textarea:focus, select:focus {
     outline: none !important;
     }
 
-input::selection {
+.item-input::selection {
     background: #c71585;}
 
-input::-moz-selection {
+.item-input::-moz-selection {
     background: #c71585;}

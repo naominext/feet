@@ -14,7 +14,7 @@ class Input extends React.Component {
 
     render() {
         return (
-            <input className="item-input" type="text" id={this.props.id} value={this.props.value} onChange={this.handleUserInput} />
+            <input className="item-input" type="text" id={this.props.id} value={this.props.value} onChange={this.handleUserInput} required />
         )
     }
 }
