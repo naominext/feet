@@ -61,6 +61,7 @@ form a {
 }
 
 #submit:hover {
+    cursor: pointer;
     background-image: linear-gradient(190deg, rgba(217,43,152,1) 0%, rgba(199,21,133,1) 100%);
     transition: 0.30s;
     -webkit-transition: 0.30s;
