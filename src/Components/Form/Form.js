@@ -34,8 +34,8 @@ class Form extends React.Component {
                     })
                 }
                 <div className="add-remove">
-                    <a style={{ display: this.props.inputs.length > 2 ? 'inline-block' : 'none' }} href="#" onClick={this.handleRemoveInput} >&#45;</a>
-                    <a href="#" onClick={this.handleAddInput} >&#43;</a>
+                    <span style={{ display: this.props.inputs.length > 2 ? 'inline-block' : 'none' }} href="#" onClick={this.handleRemoveInput} >&#45;</span>
+                    <span href="#" onClick={this.handleAddInput} >&#43;</span>
                 </div>
                 <input type="submit" id="submit" value="Make my pick" />
             </form>

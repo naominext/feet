@@ -4,7 +4,7 @@ form {
     align-items: center;
 }
 
-form a {
+form span {
     margin: 10px;
     padding: 10px;
     border: 1px solid black;
@@ -18,7 +18,7 @@ form a {
     margin: 10px 0;
 }
 
-.add-remove a {
+.add-remove span {
     color: black;
     background-color: white;
     border-radius: 50%;
@@ -33,7 +33,7 @@ form a {
     -o-transition: 0.30s;
 }
 
-.add-remove a:hover {
+.add-remove span:hover {
     background-color: #f0f0f0;
     transition: 0.30s;
   -webkit-transition: 0.30s;
