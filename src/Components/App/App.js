@@ -72,7 +72,7 @@ class App extends React.Component {
       <div className="App">
         <Logo />
         <h1>The one to watch?</h1>
-        < Form inputs={this.state.inputs} onInputChange={this.updateInput} onAddInput={this.addInput} onRemoveInput={this.removeInput} onSubmit={this.submitForm} />
+        < Form inputs={this.state.inputs} onInputChange={this.updateInput} onAddInput={this.addInput} onRemoveInput={this.removeInput} onSubmit={this.submitForm} submitted={this.state.formSubmitted} />
       </div>
     )
   }

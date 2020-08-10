@@ -25,7 +25,7 @@ class Form extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form style={{ display: this.props.submitted ? 'none' : 'flex' }} onSubmit={this.handleSubmit}>
                 {
                     this.props.inputs.map(input => {
                         return (
