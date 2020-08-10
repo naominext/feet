@@ -5,6 +5,7 @@
 
 .cls-1{
     fill:#f2f4f5;
+    position: absolute;
 }
 
 @keyframes spin {
@@ -13,6 +14,7 @@
 }
 
 .reel{
+position: absolute;
 animation: spin 12s infinite linear;
 transform-origin: 98% 88%;
 fill:#f2f4f5;
@@ -21,4 +23,5 @@ fill:#f2f4f5;
 
 .reelpos{
 transform: translate(-20px,-15px);
+position: absolute;
 }
