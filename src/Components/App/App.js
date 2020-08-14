@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Form from '../Form/Form';
 import Logo from '../Logo/Logo.js';
+import Results from '../Results/Results';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,6 +26,7 @@ class App extends React.Component {
     this.updateInput = this.updateInput.bind(this);
     this.addInput = this.addInput.bind(this);
     this.removeInput = this.removeInput.bind(this);
+    this.appReset = this.appReset.bind(this);
   }
 
   addInput() {
@@ -47,6 +49,23 @@ class App extends React.Component {
       inputs: inputs,
     })
     }
+  }
+
+  appReset() {
+    this.setState({
+      formSubmitted: false,
+      inputs: [
+        {
+          id: 1,
+          value: '',
+        },
+        {
+          id: 2,
+          value: '',
+        }
+      ],
+      winner: {},
+    })
   }
 
   updateInput(id, newValue) {
@@ -73,6 +92,7 @@ class App extends React.Component {
         <Logo />
         <h1>The one to watch?</h1>
         < Form inputs={this.state.inputs} onInputChange={this.updateInput} onAddInput={this.addInput} onRemoveInput={this.removeInput} onSubmit={this.submitForm} submitted={this.state.formSubmitted} />
+        <Results winner={this.state.winner.value} submitted={this.state.formSubmitted} onAppReset={this.appReset} />
       </div>
     )
   }

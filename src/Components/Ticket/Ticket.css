@@ -1,0 +1,20 @@
+.cls-1{fill:#f6f6f6;}.cls-2{fill:#333;}
+
+.TicketContainer{
+    margin-bottom: 20px;
+    width: 245px;
+}
+
+.TicketText{
+    position: absolute;
+    z-index: 999;
+    color: #c71585;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 45px 72.5px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100px;
+    line-height: 26px;  
+}
