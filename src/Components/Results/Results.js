@@ -14,11 +14,12 @@ class Results extends React.Component {
 
     render() {
         return (
-            <div className="Results" style={{ display: this.props.submitted ? 'inline-block' : 'none'}}>
-                <h2>Winner!</h2>
-                <p><span className="Title">{this.props.winner}</span></p>
-                <Ticket winner={this.props.winner}/>
-                <span onClick={this.handleAppReset} >Reset</span>
+            <div className="Results" style={{ display: this.props.submitted ? 'block' : 'none'}}>
+                <h2>And the winner is...</h2>
+                <div>
+                    <p className="Title">{this.props.winner}</p>
+                </div>
+                <span className="secondary-btn" onClick={this.handleAppReset} >Start again</span>
             </div>
         )}
 }
