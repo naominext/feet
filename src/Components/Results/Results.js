@@ -1,6 +1,5 @@
 import React from 'react';
 import './Results.css';
-import Ticket from '../Ticket/Ticket.js';
 
 class Results extends React.Component {
     constructor(props) {
